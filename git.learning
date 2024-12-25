@@ -1,0 +1,130 @@
+                         Git and Git Hub
+
+Git’s main goal- 
+            Git primary goal is to ensure that the customers gets releases (new features of the applications) on time (frequently). 
+
+
+Git solves 2 problems 
+1-	Sharing of code
+2-	Version control
+
+What is Version Control?
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. So ideally, we can place any file in the computer on version control.
+
+1-	Why GIT is popular 
+Version control system-
+1-	CVS
+2-	SVN
+3-	GIT
+
+SVN and CVS they both ate centralize version control system  
+GIT is Distributed version control system 
+
+2-	Deference between centralize version control system
+            & 
+           Distributed version control system 
+3-	Problem –
+ Single point of failure 
+
+GIT
+
+ 
+
+
+4-	What is Fork? 
+
+In the fork you create entire copy of your original source 
+Example-
+Your entire code of example.com is hosted on a git repository, let’s call as X repository. So, you can create a copy of X and name it (fork Madhu) so all the code is also present with me. If it is going down no worries. I have entire copy. That’s why git is solving this problem. That’s why no one is using CVS and SVN.
+
+5-	Deference between Git and GitHub
+Git- Git is open source platform, anyone can or any organization can download git and they can implement the Git in their org. or local machine. 
+
+GitHub is cloud base hosting service that lets you manage Git repositories.
+
+           Git Hub provide these solutions on git     
+1-	Usability
+2-	Raising issues 
+3-	Commenting 
+4-	Talking to peers 
+5-	Reviewing the code
+6-	Project management 
+7-	Project tracking 
+ What is inside the .git folder-
+Git track everything using. git folder. When you delete this folder everything get delete related to the repository not being tracked or git is not even watching entire system.
+
+ 
+Create git repository Commands- 
+
+1-	Git init- create new git repository > after create repository, empty get repo. Store in -. git folder. 
+
+In .git default folder –
+Config
+Object- everything in git (file) that tracked as objects. 
+Refs 
+Hocks 
+config
+HEAD
+
+2-	Life cycle of git-  https://www.geeksforgeeks.org/git-life-cycle/
+
+
+  
+
+ 
+
+
+
+
+
+
+        Git commands
+
+My git version is 2.46.2
+A-	Git init- it will initialize a local repository 
+B-	Git status 
+C-	Git diff
+D-	Git add
+E-	Git comit 
+F-	Git push
+G-	Git reset – hard version git reset --hard  bfcb8d9a9c782c08a6f95c9e53e2278c81c4438d 
+H-	Git restore – to discard the change 
+I-	Git log  - to see changes 
+J-	Git version 
+K-	Git log –oneline
+L-	git branch 
+M-	Git merge
+N-	Git rebase 
+O-	Git cherry-pick 
+P-	Git checkout main  
+Q-	Git pull
+R-	Git fetch 
+
+
+Difference between Git pull and git fatch
+Git pull- Git pull fetches changes from remote repository and merges them in to current branch. 
+
+Git fatch- only fatch changes but does not merge them in to the current branch, allow you to review and merge manually.
+
+
+
+How to go to previous version 
+
+Copy the previous version- 
+Git reset – hard version 
+
+
+Git always store all information inside the .git >objects in the encrypted format 
+
+If you consider a file in your Working Directory, it can be in three possible states.
+1.	It can be staged. Which means the files with the updated changes are marked to be committed to the local repository but not yet committed.
+2.	It can be modified. Which means the files with the updated changes are not yet stored in the local repository.
+3.	It can be committed. Which means that the changes you made to your file are safely stored in the local repository.
+4.	git add is a command used to add a file that is in the working directory to the staging area.
+5.	git commit is a command used to add all files that are staged to the local repository.
+6.	git push is a command used to add all committed files in the local repository to the remote repository. So in the remote repository, all files and changes will be visible to anyone with access to the remote repository.
+7.	git fetch is a command used to get files from the remote repository to the local repository but not into the working directory.
+8.	git merge is a command used to get the files from the local repository into the working directory.
+9.	git pull is command used to get files from the remote repository directly into the working directory. It is equivalent to a git fetch and a git merge .
+
+

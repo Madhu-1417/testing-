@@ -1,0 +1,163 @@
+            Git Branching strategy
+
+Git’s main goal- 
+            Git primary goal is to ensure that the customers gets releases (new features of the applications) on time and release new changes frequently.  
+
+Branch – 
+           Branch means separation. Like we have a running calculator application, we want to change some new changes in the running app like version -2 with new features, Like - % etc.               
+           In this case instead making changes directly to your existing branch that is by default master or main branch. We create new branch like V2, and start developing on to the new branch, test the new code, and once we are confident that our testing is good, like v1 and v2 is good for the customer’s use, simply merge these changes to the existing functionality and delete v2. 
+         We always make sure that any new changes, huge changes, breaking changes that we are adding to the existing application, that is not affecting the existing functionality.  
+
+Git’s branching stratigy- 
+         
+
+Git flow is a popular Git branching strategy aimed at simplifying release management
+https://www.gitkraken.com/learn/git/git-flow#main-branch
+
+ 
+
+Type of branches-
+  
+
+Main or master, trunk branch- i In Git, "main" (or "master") is a naming convention for a branch. After cloning (downloading) a project from a remote server, the resulting local repository has a single local branch: the so-called "main" (or "master") branch. This means that "main" (or "master") can be seen as a repository's "default" branch.
+•	t is always UpToDate. 
+
+•	Feature branch- whenever some people wants to introduce new breaking changes to the existing functionality you create feature branches. 
+
+
+•	Hotfix branch – it is very short-lived project. Whenever release new version after few days user reported bug in the production, we immediately crate a new branch called Hotfix. This branch try address the changes that customer required and this will be merge to all the branches it will master, and  merged to all the release branches that we are supporting. Because master should be up to date. 
+
+•	Release branch- we release application form this branch
+
+
+
+
+Git Questions 
+
+1-	How to create or initialize a git repository, what happened after create git ?  
+Using $git init 
+Ls -ls you see .git folder,   it is a key component of the git. 
+Git will refer .git for tracking and insuring there are no secrets, logging or you want to provide credentials to secret gate repository or you want to ensure that you developers are not pushing any sensitive information  to their git.
+
+2-	What is Git comit? 
+- Git have proper tracking management after $git add
+
+
+3-	Why git push is not working? 
+Because you did not configure a remote reference 
+
+4-	To get remote reference go to the specific folder and use –
+        git remote -v 
+
+5-	What is git push?
+Git push- push command, push entire code to the git repository.it can be self-hosted git, git hub, or big bucket.
+
+6-	What is Git lifecycle? 
+- git add, git comit, git push  
+7-	https://git.example.org/coad/git
+
+8-	What is git clone or how to pull code from Git hub?
+Or
+ what is clone?
+    Clone is just download, you can download either your code from git repository using HTTPS or SSH
+ Git clone is a process using which you pull the code form GitHub, big bucket or any git repository.  
+
+
+9-	What is There are multiple ways to pull your cade our download the code?
+1-	HTTPS
+2-	SSh
+3-	GITHUB cli
+
+A-	HTTPS- click on  the code run the command “git clone code ”
+B-	Password- your git password
+
+When we using HTTPS we authenticate using own Password but using SSH we authenticate using public key. That Is the deferent between HTTPS and SSH 
+
+               SSH- how to get public key?
+                ssh-keygen  or ssh-keygen -t rsa.  you can get new public and private key. 
+
+10-	Deference between git clone and got fork?
+
+Fork is use to create a copy of the repository and clone is use to download the copy of code. 
+
+Git is distributed version control system. That means git code is present in one place and you can distribute means you can create multiple copy of the git and you can collaborate on that replicas. 
+11-	How to create feature branch from the main branch? 
+
+git branch 
+Or 
+Git checkout -b branch_name (to go to feature branch)
+
+Git log branch_name and git checkout branch_name && git log both are same.
+
+Come back the main branch 
+Git checkout main  
+
+12-	How to add code from feature branch to the main branch?
+Git merge
+Or
+Git rebase
+Or 
+Git cherry-pick 
+
+13-	When there are one change to add in the main branch use Git cherry-pick 
+Git cherry-pick (code from log file)
+
+14-	But if there are multiple changes or code to add in the main branch use git merge or git rebase
+
+
+15-	Deference between git rebase and git merge?
+
+
+
+
+
+How to create remote repository in the local 
+
+
+1-	Go to git_acm download 
+2-	Install in your laptop 
+3-	Create new folder 
+4-	Run  -  git init 
+5-	It will create .git folder it is your git repository 
+
+
+Ssh-keygen -t rsa
+       To create public/private key
+
+  
+How to pull code from github
+6-	git clone https://github.com/iam-veeramalla/argo-cd.git
+we can create clone of any repository in our location 
+7-	git remote add origin "github.com/iam-veeramalla/argo-cd.git" we can create remote repository 
+8-	git remote -v. to check your remote repository 
+origin	github.com/iam-veeramalla/argo-cd.git (fetch)
+origin	github.com/iam-veeramalla/argo-cd.git (push) 
+
+
+
+
+
+How to create branch 
+=========================================
+1-	git branch – to create new empty branch from the main branch. 
+Or 
+2-	Git checkout -b (new_branch_name) – it will. Create new branch of the main branch
+3-	Git branch – to check created new branch 
+4-	Git checkout branch_name – to switch branch 
+
+            How to add branches in to main branch
+
+1-	Git merge
+2-	Git rebase
+3-	Git cherry-pick- is good for merging 1 or 2 files in the main branch 
+Git log –oneline 
+
+
+4-	Git log branch_name – to check deferent branch logs
+Deference between git merge and rebase is – 
+           Merge always update in top of the main commit (changes updated after your change).
+            rebase always update bottom of the main commit.
+                           It’s up to you how you want to merge the file 
+
+
+
