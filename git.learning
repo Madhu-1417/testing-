@@ -28,9 +28,6 @@ GIT is Distributed version control system
 
 GIT
 
- 
-
-
 4-	What is Fork? 
 
 In the fork you create entire copy of your original source 
@@ -67,16 +64,6 @@ config
 HEAD
 
 2-	Life cycle of git-  https://www.geeksforgeeks.org/git-life-cycle/
-
-
-  
-
- 
-
-
-
-
-
 
         Git commands
 
